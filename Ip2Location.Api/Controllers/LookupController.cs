@@ -36,7 +36,7 @@ namespace Ip2Location.Api.Controllers
             
             return _database.IpGeoLocation
                 .Where(i => i.IpFrom <= ipNum)
-                .Take(1)
+                .OrderByDescending(i => i.IpFrom)
                 .FirstOrDefault();
         }
     }
