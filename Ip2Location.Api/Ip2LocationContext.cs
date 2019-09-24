@@ -26,7 +26,7 @@ namespace Ip2Location.Api
 
             modelBuilder.Entity<IpGeoLocation>(entity =>
             {
-                entity.ToTable("ip_geo_location", "hive");
+                entity.ToTable("ip_geo_location");
 
                 entity.HasIndex(e => e.IpFrom)
                     .HasName("IDX_ECF8386FAA7DFDFF");

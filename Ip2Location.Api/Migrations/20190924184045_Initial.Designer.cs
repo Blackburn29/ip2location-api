@@ -92,7 +92,7 @@ namespace Ip2Location.Api.Migrations
                     b.HasIndex("IpTo")
                         .HasName("IDX_ECF8386FC881EB0B");
 
-                    b.ToTable("ip_geo_location","hive");
+                    b.ToTable("ip_geo_location");
                 });
 #pragma warning restore 612, 618
         }
